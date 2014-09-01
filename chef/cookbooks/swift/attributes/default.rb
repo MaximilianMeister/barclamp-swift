@@ -87,6 +87,7 @@ default[:swift][:ssl][:insecure] = false
 default[:swift][:proxy][:service_name]  = "swift-proxy"
 if %w(redhat centos suse).include?(node[:platform])
   default[:swift][:proxy][:service_name] = "openstack-swift-proxy"
+  default[:swift][:storage][:service_name] = ["openstack-swift-account","openstack-swift-account-auditor","openstack-swift-account-reaper","openstack-swift-account-replicator","openstack-swift-container","openstack-swift-container-auditor","openstack-swift-container-replicator","openstack-swift-container-updater","openstack-swift-object","openstack-swift-object-auditor","openstack-swift-object-expirer","openstack-swift-object-replicator","openstack-swift-object-updater"]
 end
 
 default[:swift][:ports][:proxy] = 8080

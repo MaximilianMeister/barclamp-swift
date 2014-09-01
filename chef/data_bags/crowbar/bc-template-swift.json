@@ -139,7 +139,9 @@
         "swift-ring-compute": 80,
         "swift-proxy": 81,
         "swift-storage": 82,
-        "swift-dispersion": 83
+        "swift-dispersion": 83,
+        "swift-proxy_remove": 84,
+        "swift-storage_remove": 85
       },
       "config": {
         "environment": "swift-config-base",
